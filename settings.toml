@@ -1,0 +1,42 @@
+#Settings for AutoMeet
+
+# User Account
+
+email_id = "team@example.com"
+password = "YOUR_TEAMS_PASSWORD"
+
+# Direct Meeting Link (Optional)
+# If provided, the script will join this link after you log in.
+# If left empty, the script will look for joinable meetings on your Teams Calendar.
+meeting_link = "https://teams.microsoft.com/l/meetup-join/REPLACE_ME"
+
+
+
+# Meeting settings
+
+minimum_participants = 10       
+# AutoMeet will leave the meeting if the number of people attending the meeting drops below this.
+
+
+
+
+# Advance Settings -- DON'T LOOK HERE IF YOU DON"T NEED TO 
+
+timeout = 60
+# Basically, the amount of time required for logging in to teams or a meeting to connect.
+# Default: one minute. Set it higher if your internet is slow or lower if your internet is fast.
+
+
+# --- NEW SETTINGS FOR VOSK STT & NOTIFICATIONS ---
+
+# Whisper STT Settings
+whisper_model_size = "medium"
+alert_keywords = ["attendance"]
+
+# Email Notification Settings
+# IMPORTANT: For Gmail, use an "App Password" not your regular account password.
+sender_email = "notifications@example.com"
+sender_password = "YOUR_SMTP_APP_PASSWORD"
+notification_email = "alerts@example.com"
+smtp_server = "smtp.gmail.com"
+smtp_port = 587
